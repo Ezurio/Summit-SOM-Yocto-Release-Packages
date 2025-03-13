@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="origin" fetch="https://github.com/Ezurio" />
+  <remote  name="github" fetch="https://github.com/" />
+  <remote  name="openembedded" fetch="https://git.openembedded.org/"/>
+  <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
+  <remote  name="QT6" fetch="https://code.qt.io/yocto"/>
+
+  <default remote="origin" revision="refs/tags/SUMMIT-REL-5.0.68.2" />
+
+  <project path="sources/meta-ti"
+           name="meta-ti"
+           remote="yocto"
+           revision="refs/tags/10.01.10"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-openembedded"
+           name="openembedded/meta-openembedded"
+           remote="github"
+           revision="4f11a12b2352bbdfafb6b7d956bf424af4992977"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-arm"
+           name="meta-arm"
+           remote="yocto"
+           revision="950a4afce46a359def2958bd9ae33fc08ff9bb0d"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-qt6"
+           name="meta-qt6"
+           remote="QT6"
+           revision="416a83c4c4cedde4503239fff0079a66d8aacc16"
+           dest-branch="6.7"
+           upstream="6.7"/>
+
+  <project path="sources/meta-timesys"
+           name="TimesysGit/meta-timesys"
+           remote="github"
+           revision="scarthgap"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/poky"
+           name="poky"
+           remote="yocto"
+           revision="refs/tags/scarthgap-5.0.6"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-swupdate"
+           name="sbabic/meta-swupdate"
+           remote="github"
+           revision="d598d4e675b541301ea1dfc8f0c8931983b4dcd0"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-summit-radio"
+           name="meta-summit-radio"
+           revision="lrd-12.103.0.x"/>
+
+  <project path="sources/meta-summit-som"
+           name="meta-summit-som">
+
+    <linkfile src="tools/setup-environment-ti" dest="setup-environment-ti"/>
+
+  </project>
+
+</manifest>
