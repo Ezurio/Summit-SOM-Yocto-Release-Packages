@@ -3,14 +3,20 @@
 
   <remote  name="origin" fetch="https://github.com/Ezurio" />
   <remote  name="github" fetch="https://github.com/" />
-  <remote  name="openembedded" fetch="https://git.openembedded.org/"/>
   <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
   <remote  name="QT6" fetch="https://code.qt.io/yocto"/>
 
-  <default remote="origin" revision="refs/tags/SUMMIT-REL-5.0.93.4" />
+  <default remote="origin" revision="refs/tags/SUMMIT-REL-5.0.93.8" />
 
   <project path="sources/meta-ti"
            name="meta-ti"
+           remote="yocto"
+           revision="refs/tags/11.00.09"
+           dest-branch="scarthgap"
+           upstream="scarthgap"/>
+
+  <project path="sources/meta-arago"
+           name="meta-arago"
            remote="yocto"
            revision="refs/tags/11.00.09"
            dest-branch="scarthgap"
