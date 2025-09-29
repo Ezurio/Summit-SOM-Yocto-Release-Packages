@@ -6,7 +6,7 @@
   <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
   <remote  name="QT6" fetch="https://code.qt.io/yocto"/>
 
-  <default remote="origin" revision="refs/tags/SUMMIT-REL-5.0.93.8" />
+  <default remote="origin" revision="refs/tags/SUMMIT-REL-5.0.93.11" />
 
   <project path="sources/meta-ti"
            name="meta-ti"
@@ -15,17 +15,10 @@
            dest-branch="scarthgap"
            upstream="scarthgap"/>
 
-  <project path="sources/meta-arago"
-           name="meta-arago"
-           remote="yocto"
-           revision="refs/tags/11.00.09"
-           dest-branch="scarthgap"
-           upstream="scarthgap"/>
-
   <project path="sources/meta-openembedded"
            name="openembedded/meta-openembedded"
            remote="github"
-           revision="e8fd97d86af86cdcc5a6eb3f301cbaf6a2084943"
+           revision="e621da947048842109db1b4fd3917a02e0501aa2"
            dest-branch="scarthgap"
            upstream="scarthgap"/>
 
@@ -39,9 +32,9 @@
   <project path="sources/meta-qt6"
            name="meta-qt6"
            remote="QT6"
-           revision="416a83c4c4cedde4503239fff0079a66d8aacc16"
-           dest-branch="6.7"
-           upstream="6.7"/>
+           revision="refs/tags/v6.8.4-lts"
+           dest-branch="lts-6.8.4"
+           upstream="lts-6.8.4"/>
 
   <project path="sources/meta-timesys"
            name="TimesysGit/meta-timesys"
@@ -53,7 +46,7 @@
   <project path="sources/poky"
            name="poky"
            remote="yocto"
-           revision="refs/tags/scarthgap-5.0.11"
+           revision="refs/tags/scarthgap-5.0.12"
            dest-branch="scarthgap"
            upstream="scarthgap"/>
 
