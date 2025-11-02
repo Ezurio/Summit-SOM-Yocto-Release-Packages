@@ -6,12 +6,12 @@
   <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
   <remote  name="QT6" fetch="https://code.qt.io/yocto"/>
 
-  <default remote="origin" revision="refs/tags/SUMMIT-REL-5.0.93.11" />
+  <default remote="origin" revision="refs/tags/SUMMIT-REL-5.0.93.12" />
 
   <project path="sources/meta-ti"
            name="meta-ti"
            remote="yocto"
-           revision="refs/tags/11.00.09"
+           revision="refs/tags/11.01.09"
            dest-branch="scarthgap"
            upstream="scarthgap"/>
 
@@ -32,9 +32,9 @@
   <project path="sources/meta-qt6"
            name="meta-qt6"
            remote="QT6"
-           revision="refs/tags/v6.8.4-lts"
-           dest-branch="lts-6.8.4"
-           upstream="lts-6.8.4"/>
+           revision="refs/tags/v6.8.5-lts"
+           dest-branch="lts-6.8.5"
+           upstream="lts-6.8.5"/>
 
   <project path="sources/meta-timesys"
            name="TimesysGit/meta-timesys"
@@ -46,7 +46,7 @@
   <project path="sources/poky"
            name="poky"
            remote="yocto"
-           revision="refs/tags/scarthgap-5.0.12"
+           revision="refs/tags/scarthgap-5.0.13"
            dest-branch="scarthgap"
            upstream="scarthgap"/>
 
