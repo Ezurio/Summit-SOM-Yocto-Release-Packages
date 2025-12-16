@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="origin" fetch="https://github.com/Ezurio" />
+  <remote  name="github" fetch="https://github.com/" />
+  <remote  name="yocto" fetch="https://git.yoctoproject.org/git/"/>
+  <remote  name="QT6" fetch="https://code.qt.io/yocto"/>
+
+  <default remote="origin" revision="refs/tags/SUMMIT-REL-6.12.0.12" />
+
+  <project path="sources/base"
+           name="Freescale/fsl-community-bsp-base"
+           remote="github"
+           revision="84df0b1ff416c6739472f7f7eadff04fa90d38f6"
+           dest-branch="master"
+           upstream="master">
+
+    <linkfile src="README" dest="README"/>
+
+  </project>
+
+  <project path="sources/meta-freescale"
+           name="Freescale/meta-freescale"
+           remote="github"
+           revision="167ff4ddb79299cf5477e94620a9e598659c407b"/>
+
+  <project path="sources/meta-freescale-3rdparty"
+           name="Freescale/meta-freescale-3rdparty"
+           remote="github"
+           revision="68d47bf4dde321f1289758fe6c36bfbdad81fc30"/>
+
+  <project path="sources/meta-freescale-distro"
+           name="Freescale/meta-freescale-distro"
+           remote="github"
+           revision="b9c3536b68271c420fe5de36fc284781ceaa32ab"/>
+
+  <project path="sources/meta-imx"
+           name="nxp-imx/meta-imx"
+           remote="github"
+           revision="refs/tags/rel_imx_6.12.34_2.1.0">
+
+    <linkfile src="README.md" dest="README-IMXBSP"/>
+
+  </project>
+
+  <project path="sources/meta-openembedded"
+           name="openembedded/meta-openembedded"
+           remote="github"
+           revision="dca497d728792e3cb655c78455c2d649af312ce8"/>
+
+  <project path="sources/meta-arm"
+           name="meta-arm"
+           remote="yocto"
+           revision="21894cc2ea3197e6bfc1a56d889f757a09dc8b31"/>
+
+  <project path="sources/meta-qt6"
+           name="meta-qt6"
+           remote="QT6"
+           revision="refs/tags/v6.8.4-lts"/>
+
+  <project path="sources/meta-timesys"
+           name="TimesysGit/meta-timesys"
+           remote="github"
+           revision="walnascar"/>
+
+  <project path="sources/poky"
+           name="poky"
+           remote="yocto"
+           revision="refs/tags/walnascar-5.2.3"/>
+
+  <project path="sources/meta-swupdate"
+           name="sbabic/meta-swupdate"
+           remote="github"
+           revision="47cb53b31f044048bd095f544111004259540870"/>
+
+  <project path="sources/meta-summit-radio"
+           name="meta-summit-radio"
+           revision="lrd-13.24.0.x"/>
+
+  <project path="sources/meta-summit-som"
+           name="meta-summit-som">
+
+    <linkfile src="tools/setup-environment-nxp" dest="setup-environment-nxp"/>
+
+  </project>
+
+</manifest>
