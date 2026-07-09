@@ -6,7 +6,7 @@
   <remote  name="yocto" fetch="https://git.yoctoproject.org/"/>
   <remote  name="QT6" fetch="https://code.qt.io/yocto"/>
 
-  <default remote="origin" revision="refs/tags/SUMMIT-REL-5.102.0.11" />
+  <default remote="origin" revision="refs/tags/SUMMIT-REL-5.102.0.17" />
 
   <project path="sources/meta-ti"
            name="meta-ti"
